@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+        /* Siatka z dwoma kolumnami: 2fr i 1fr */
+        .container {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-gap: 10px;
+          align-items: center;
+          padding: 20px;
+          margin: 0 auto;
+          max-width: 600px;
+        }
+        
+        /* Styl dla tekstu po lewej */
+        .text {
+          font-family: sans-serif;
+          font-size: 18px;
+          color: #333;
+          text-align: left;
+          width: 300px;
+        }
+        
+        /* Styl dla obrazka po prawej */
+        .image {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+        
+        /* Reguły media dla mniejszych rozdzielczości */
+        @media screen and (max-width: 768px) {
+
+        /* Zmienna dla body aby po obu stronach był padding, czyli odstęp 10px :) */
+          body {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          
+          /* Zmiana kolumn na 1 */
+          .container {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            text-align: center;
+          }
+
+          /* Wyśrodkowanie tekstu */
+          .text {
+            text-align: center;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto; /* Marginy dodałem tutaj tylko dlatego iż zrobiłem max-width tekstu, w momencie usunięcia tego można usunąć również marginy :D */
+            max-width: 500px;
+          }
+          
+          /* Wyśrodkowanie nagłówka */
+          h2 {
+            text-align: center;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h2>Tytuł</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget efficitur quam. Nam auctor metus at metus vestibulum, id consectetur nisl auctor. Proin suscipit erat at enim commodo, non tincidunt metus accumsan. Suspendisse potenti.</p>
+      </div>
+      <div class="image">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Obrazek">
+      </div>
+    </div>
+  </body>
+</html>
