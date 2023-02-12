@@ -1,53 +1,7 @@
 <html>
   <head>
-    <style>
-/* Styl dla tekstu po lewej */
-.text {
-      font-family: sans-serif; /* ustawienie domyślnej czcionki */
-      font-size: 18px; /* ustawienie rozmiaru czcionki */
-      color: #333; /* ustawienie koloru czcionki */
-      text-align: left; /* wyrównanie tekstu do lewej */
-      width: 300px; /* szerokość tekstu */
-    }
-    
-    /* Styl dla obrazka po prawej */
-    .image {
-      width: 100%; /* pełna szerokość obrazka */
-      height: auto; /* automatyczne dopasowanie wysokości */
-      border-radius: 8px; /* zaokrąglenie rogów obrazka */
-    }
-    
-    /* Reguły media dla mniejszych rozdzielczości */
-    @media screen and (max-width: 768px) {
-
-    /* Zmienna dla body aby po obu stronach był padding, czyli odstęp 10px */
-      body {
-        padding-left: 10px; /* dodanie paddingu po lewej stronie */
-        padding-right: 10px; /* dodanie paddingu po prawej stronie */
-      }
-      
-      /* Zmiana kolumn na 1 */
-      .container {
-        grid-template-columns: 1fr; /* zmiana na jedną kolumnę */
-        justify-content: center; /* wyśrodkowanie zawartości */
-        text-align: center; /* wyśrodkowanie tekstu */
-      }
-
-      /* Wyśrodkowanie tekstu */
-      .text {
-        text-align: center; /* wyśrodkowanie tekstu */
-        width: auto; /* automatyczne dopasowanie szerokości */
-        margin-left: auto; /* automatyczne wyśrodkowanie do środka po lewej */
-        margin-right: auto; /* automatyczne wyśrodkowanie do środka po prawej */
-        max-width: 500px;
-          }
-          
-          /* Wyśrodkowanie nagłówka */
-          h2 {
-            text-align: center; /* automatyczne wyśrodkowanie tekstu */
-          }
-        }
-      </style>
+    <title> Wprowadzenie do Grid Layout w HTML i CSS </title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
