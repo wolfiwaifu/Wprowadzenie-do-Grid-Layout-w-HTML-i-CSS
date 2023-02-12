@@ -1,61 +1,50 @@
 <html>
   <head>
     <style>
-        /* Siatka z dwoma kolumnami: 2fr i 1fr */
-        .container {
-          display: grid;
-          grid-template-columns: 2fr 1fr;
-          grid-gap: 10px;
-          align-items: center;
-          padding: 20px;
-          margin: 0 auto;
-          max-width: 600px;
-        }
-        
-        /* Styl dla tekstu po lewej */
-        .text {
-          font-family: sans-serif;
-          font-size: 18px;
-          color: #333;
-          text-align: left;
-          width: 300px;
-        }
-        
-        /* Styl dla obrazka po prawej */
-        .image {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-        }
-        
-        /* Reguły media dla mniejszych rozdzielczości */
-        @media screen and (max-width: 768px) {
+/* Styl dla tekstu po lewej */
+.text {
+      font-family: sans-serif; /* ustawienie domyślnej czcionki */
+      font-size: 18px; /* ustawienie rozmiaru czcionki */
+      color: #333; /* ustawienie koloru czcionki */
+      text-align: left; /* wyrównanie tekstu do lewej */
+      width: 300px; /* szerokość tekstu */
+    }
+    
+    /* Styl dla obrazka po prawej */
+    .image {
+      width: 100%; /* pełna szerokość obrazka */
+      height: auto; /* automatyczne dopasowanie wysokości */
+      border-radius: 8px; /* zaokrąglenie rogów obrazka */
+    }
+    
+    /* Reguły media dla mniejszych rozdzielczości */
+    @media screen and (max-width: 768px) {
 
-        /* Zmienna dla body aby po obu stronach był padding, czyli odstęp 10px :) */
-          body {
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-          
-          /* Zmiana kolumn na 1 */
-          .container {
-            grid-template-columns: 1fr;
-            justify-content: center;
-            text-align: center;
-          }
+    /* Zmienna dla body aby po obu stronach był padding, czyli odstęp 10px */
+      body {
+        padding-left: 10px; /* dodanie paddingu po lewej stronie */
+        padding-right: 10px; /* dodanie paddingu po prawej stronie */
+      }
+      
+      /* Zmiana kolumn na 1 */
+      .container {
+        grid-template-columns: 1fr; /* zmiana na jedną kolumnę */
+        justify-content: center; /* wyśrodkowanie zawartości */
+        text-align: center; /* wyśrodkowanie tekstu */
+      }
 
-          /* Wyśrodkowanie tekstu */
-          .text {
-            text-align: center;
-            width: auto;
-            margin-left: auto;
-            margin-right: auto; /* Marginy dodałem tutaj tylko dlatego iż zrobiłem max-width tekstu, w momencie usunięcia tego można usunąć również marginy :D */
-            max-width: 500px;
+      /* Wyśrodkowanie tekstu */
+      .text {
+        text-align: center; /* wyśrodkowanie tekstu */
+        width: auto; /* automatyczne dopasowanie szerokości */
+        margin-left: auto; /* automatyczne wyśrodkowanie do środka po lewej */
+        margin-right: auto; /* automatyczne wyśrodkowanie do środka po prawej */
+        max-width: 500px;
           }
           
           /* Wyśrodkowanie nagłówka */
           h2 {
-            text-align: center;
+            text-align: center; /* automatyczne wyśrodkowanie tekstu */
           }
         }
       </style>
